@@ -1,0 +1,471 @@
+예시 원본 코드
+/usr/bin/cc  -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MD -MT src/kem/bike/CMakeFiles/kem_bike.dir/kem_bike.c.o -MF \
+    src/kem/bike/CMakeFiles/kem_bike.dir/kem_bike.c.o.d -o src/kem/bike/CMakeFiles/kem_bike.dir/kem_bike.c.o -c \
+    /home/wngus/projects/pqc-analysis/liboqs/src/kem/bike/kem_bike.c
+
+예시 변형 코드
+/usr/bin/cc -I./include \ 
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem_bike.o -c \
+    ./src/kem/bike/kem_bike.c
+------------------------------------------------------------------------------------------------------------------------------------------------
+<AES>
+(1) 변형 AES 코드
+/usr/bin/cc  -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/aes_impl.o \
+    -c ./src/common/aes/aes_impl.c
+
+(1) 실제 AES 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MD -MT src/common/CMakeFiles/common.dir/aes/aes_impl.c.o -MF \
+    src/common/CMakeFiles/common.dir/aes/aes_impl.c.o.d -o src/common/CMakeFiles/common.dir/aes/aes_impl.c.o \
+    –c /home/wngus/projects/pqc-analysis/liboqs/src/common/aes/aes_impl.c
+------------------------------------------------------------------------------------------------------------------------------------------------
+(2) 실제 AES 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast -MD -MT src/common/CMakeFiles/common.dir/aes/aes_c.c.o -MF src/common/CMakeFiles/common.dir/aes/aes_c.c.o.d -o src/common/CMakeFiles/common.dir/aes/aes_c.c.o –c /home/wngus/projects/pqc-analysis/liboqs/src/common/aes/aes_c.c
+
+(2) 변형 AES 코드
+/usr/bin/cc  -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/aes_c.o \
+    -c ./src/common/aes/aes_c.c
+------------------------------------------------------------------------------------------------------------------------------------------------
+(3) 실제 AES 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast -MD -MT src/common/CMakeFiles/common.dir/aes/aes.c.o -MF src/common/CMakeFiles/common.dir/aes/aes.c.o.d -o src/common/CMakeFiles/common.dir/aes/aes.c.o –c /home/wngus/projects/pqc-analysis/liboqs/src/common/aes/aes.c
+
+(3) 변형 AES 코드
+/usr/bin/cc  -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/aes.o \
+    -c ./src/common/aes/aes.c
+------------------------------------------------------------------------------------------------------------------------------------------------
+(4) 실제 AES 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast -maes -mssse3 \
+    -MD -MT src/common/CMakeFiles/common.dir/aes/aes128_ni.c.o -MF src/common/CMakeFiles/common.dir/aes/aes128_ni.c.o.d -o src/common/CMakeFiles/common.dir/aes/aes128_ni.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/aes/aes128_ni.c
+
+(4) 변형 AES 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast -maes -mssse3 \
+    -MMD -MP -o build/aes128_ni.o \
+    -c ./src/common/aes/aes128_ni.c
+-----------------------------------------------------------------------------------------
+(5) 실제 AES 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast -maes -mssse3 \
+    -MD -MT src/common/CMakeFiles/common.dir/aes/aes256_ni.c.o -MF src/common/CMakeFiles/common.dir/aes/aes256_ni.c.o.d -o src/common/CMakeFiles/common.dir/aes/aes256_ni.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/aes/aes256_ni.c
+
+(5) 변형 AES 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast -maes -mssse3 \
+    -MMD -MP -o build/aes256_ni.o \
+    -c ./src/common/aes/aes256_ni.c
+-----------------------------------------------------------------------------------------
+<SHA2>
+(1) 실제 SHA2 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/sha2.o \
+    -c ./src/common/sha2/sha2.c
+
+(1) 변형 SHA2 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/sha2.o \
+    -c ./src/common/sha2/sha2.c
+-----------------------------------------------------------------------------------------
+<SHA3>
+(1) 실제 SHA3 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MD -MT src/common/CMakeFiles/common.dir/sha3/sha3.c.o -MF src/common/CMakeFiles/common.dir/sha3/sha3.c.o.d -o src/common/CMakeFiles/common.dir/sha3/sha3.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/sha3/sha3.c
+
+(1) 변형 SHA3 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/sha3.o \
+    -c ./src/common/sha3/sha3.c
+-----------------------------------------------------------------------------------------
+(2) 실제 SHA3 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=default -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MD -MT src/common/CMakeFiles/internal.dir/sha3/sha3x4.c.o -MF src/common/CMakeFiles/internal.dir/sha3/sha3x4.c.o.d -o src/common/CMakeFiles/internal.dir/sha3/sha3x4.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/sha3/sha3x4.c
+
+(2) 변형 SHA3 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=default -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/src/common/sha3/sha3x4.o \
+    -c ./src/common/sha3/sha3x4.c
+-----------------------------------------------------------------------------------------
+(3) 실제 SHA3 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=default -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MD -MT src/common/CMakeFiles/internal.dir/sha3/xkcp_sha3x4.c.o -MF src/common/CMakeFiles/internal.dir/sha3/xkcp_sha3x4.c.o.d -o src/common/CMakeFiles/internal.dir/sha3/xkcp_sha3x4.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/sha3/xkcp_sha3x4.c
+
+(3) 변형 SHA3 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=default -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/src/common/sha3/xkcp_sha3x4.o \
+    -c ./src/common/sha3/xkcp_sha3x4.c
+-----------------------------------------------------------------------------------------
+(3) 실제 SHA3 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MD -MT src/common/CMakeFiles/common.dir/sha3/xkcp_sha3.c.o -MF src/common/CMakeFiles/common.dir/sha3/xkcp_sha3.c.o.d -o src/common/CMakeFiles/common.dir/sha3/xkcp_sha3.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/sha3/xkcp_sha3.c
+
+(3) 변형 SHA3 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/src/common/sha3/xkcp_sha3.o \
+    -c ./src/common/sha3/xkcp_sha3.c
+-----------------------------------------------------------------------------------------
+(4) 실제 SHA3 코드
+/usr/bin/cc -DADD_SYMBOL_SUFFIX -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MD -MT src/common/sha3/xkcp_low/CMakeFiles/xkcp_low_keccakp_1600_plain64.dir/KeccakP-1600/plain-64bits/KeccakP-1600-opt64.c.o -MF src/common/sha3/xkcp_low/CMakeFiles/xkcp_low_keccakp_1600_plain64.dir/KeccakP-1600/plain-64bits/KeccakP-1600-opt64.c.o.d -o src/common/sha3/xkcp_low/CMakeFiles/xkcp_low_keccakp_1600_plain64.dir/KeccakP-1600/plain-64bits/KeccakP-1600-opt64.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/sha3/xkcp_low/KeccakP-1600/plain-64bits/KeccakP-1600-opt64.c
+
+(4) 변형 SHA3 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/common/sha3/KeccakP-1600-opt64.o \
+    -c ./src/common/sha3/xkcp_low/KeccakP-1600/plain-64bits/KeccakP-1600-opt64.c
+-----------------------------------------------------------------------------------------
+(5) 실제 SHA3 코드
+/usr/bin/cc -DADD_SYMBOL_SUFFIX -I/home/wngus/projects/pqc-analysis/liboqs/build/include -I/home/wngus/projects/pqc-analysis/liboqs/src/common/sha3/xkcp_low/KeccakP-1600/plain-64bits \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MD -MT src/common/sha3/xkcp_low/CMakeFiles/xkcp_low_keccakp_1600times4_serial.dir/KeccakP-1600times4/serial/KeccakP-1600-times4-on1.c.o -MF src/common/sha3/xkcp_low/CMakeFiles/xkcp_low_keccakp_1600times4_serial.dir/KeccakP-1600times4/serial/KeccakP-1600-times4-on1.c.o.d -o src/common/sha3/xkcp_low/CMakeFiles/xkcp_low_keccakp_1600times4_serial.dir/KeccakP-1600times4/serial/KeccakP-1600-times4-on1.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/sha3/xkcp_low/KeccakP-1600times4/serial/KeccakP-1600-times4-on1.c
+
+(5) 변형 SHA3 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/common/sha3/KeccakP-1600-times4-on1.o \
+    -c ./src/common/sha3/xkcp_low/KeccakP-1600times4/serial/KeccakP-1600-times4-on1.c
+-----------------------------------------------------------------------------------------
+<rand>
+(1) 실제 rand 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MD -MT src/common/CMakeFiles/common.dir/rand/rand.c.o -MF src/common/CMakeFiles/common.dir/rand/rand.c.o.d -o src/common/CMakeFiles/common.dir/rand/rand.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/rand/rand.c
+
+(1) 변형 rand 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer \
+    -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/src/common/rand/rand.o \
+    -c ./src/common/rand/rand.c
+-----------------------------------------------------------------------------------------
+(2) 실제 rand 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=default -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MD -MT src/common/CMakeFiles/internal.dir/rand/rand_nist.c.o -MF src/common/CMakeFiles/internal.dir/rand/rand_nist.c.o.d -o src/common/CMakeFiles/internal.dir/rand/rand_nist.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/rand/rand_nist.c
+
+(2) 변형 rand 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=default -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/src/common/rand/rand_nist.o \
+    -c ./src/common/rand/rand_nist.c
+-----------------------------------------------------------------------------------------
+(1) 실제 common 코드
+/usr/bin/cc -DOQS_HAVE_ALIGNED_ALLOC -DOQS_HAVE_EXPLICIT_BZERO -DOQS_HAVE_MEMALIGN -DOQS_HAVE_POSIX_MEMALIGN -I/home/wngus/projects/pqc-analysis/liboqs/build/include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MD -MT src/common/CMakeFiles/common.dir/common.c.o -MF src/common/CMakeFiles/common.dir/common.c.o.d -o src/common/CMakeFiles/common.dir/common.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/common/common.c
+
+(1) 변형 common 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -Wbad-function-cast \
+    -MMD -MP -o build/src/common/common.o \
+    -c ./src/common/common.c
+-----------------------------------------------------------------------------------------
+(1) internal 라이브러리 코드
+/usr/bin/ar qc build/lib/liboqs-internal.a \
+  build/common/sha3/xkcp_low/KeccakP-1600/plain-64bits/KeccakP-1600-opt64.o build/common/sha3/xkcp_low/KeccakP-1600times4/serial/KeccakP-1600-times4-on1.o \
+  build/common/aes/aes_impl.o build/common/aes/aes_c.o build/common/aes/aes.o \
+  build/common/sha2/sha2.o \
+  build/common/sha3/xkcp_sha3.o build/common/sha3/xkcp_sha3x4.o build/common/sha3/sha3.o build/common/sha3/sha3x4.o \
+  build/common/common.o \
+  build/common/rand/rand_nist.o
+-----------------------------------------------------------------------------------------
+(1) 실제 ml_kem_512_ref 코드
+/usr/bin/cc  -I/home/wngus/projects/pqc-analysis/liboqs/build/include -I/home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref -I/home/wngus/projects/pqc-analysis/liboqs/src/common/pqclean_shims \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MD -MT src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/compress.c.o -MF src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/compress.c.o.d -o src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/compress.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/compress.c
+
+(1) 변형 ml_kem_512_ref 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/src/kem/ml_kem/compress.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/compress.c
+-----------------------------------------------------------------------------------------
+(2) 실제 ml_kem_512_ref 코드
+/usr/bin/cc  -I/home/wngus/projects/pqc-analysis/liboqs/build/include -I/home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref -I/home/wngus/projects/pqc-analysis/liboqs/src/common/pqclean_shims \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MD -MT src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/debug.c.o -MF src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/debug.c.o.d -o src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/debug.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/debug.c
+
+(2) 변형 ml_kem_512_ref 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/src/kem/ml_kem/debug.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/debug.c
+-----------------------------------------------------------------------------------------
+(3) 실제 ml_kem_512_ref 코드
+/usr/bin/cc  -I/home/wngus/projects/pqc-analysis/liboqs/build/include -I/home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref -I/home/wngus/projects/pqc-analysis/liboqs/src/common/pqclean_shims \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MD -MT src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/indcpa.c.o -MF src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/indcpa.c.o.d -o src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/indcpa.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/indcpa.c
+
+(3) 변형 ml_kem_512_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/indcpa.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/indcpa.c
+-----------------------------------------------------------------------------------------
+(4) 실제 ml_kem_512_ref 코드
+/usr/bin/cc  -I/home/wngus/projects/pqc-analysis/liboqs/build/include -I/home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref -I/home/wngus/projects/pqc-analysis/liboqs/src/common/pqclean_shims \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MD -MT src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/kem.c.o -MF src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/kem.c.o.d -o src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/kem.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/kem.c
+
+(4) 변형 ml_kem_512_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/kem.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/kem.c
+-----------------------------------------------------------------------------------------
+(5) 실제 ml_kem_512_ref 코드
+/usr/bin/cc  -I/home/wngus/projects/pqc-analysis/liboqs/build/include -I/home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref -I/home/wngus/projects/pqc-analysis/liboqs/src/common/pqclean_shims \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MD -MT src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/poly_k.c.o -MF src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/poly_k.c.o.d -o src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/poly_k.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/poly_k.c
+
+(5) 변형 ml_kem_512_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/poly_k.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/poly_k.c
+-----------------------------------------------------------------------------------------
+(6) 실제 ml_kem_512_ref 코드
+/usr/bin/cc  -I/home/wngus/projects/pqc-analysis/liboqs/build/include -I/home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref -I/home/wngus/projects/pqc-analysis/liboqs/src/common/pqclean_shims \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MD -MT src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/poly.c.o -MF src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/poly.c.o.d -o src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/poly.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/poly.c
+
+(6) 변형 ml_kem_512_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/poly.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/poly.c
+-----------------------------------------------------------------------------------------
+(7) 실제 ml_kem_512_ref 코드
+/usr/bin/cc  -I/home/wngus/projects/pqc-analysis/liboqs/build/include -I/home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref -I/home/wngus/projects/pqc-analysis/liboqs/src/common/pqclean_shims \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MD -MT src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/sampling.c.o -MF src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/sampling.c.o.d -o src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/sampling.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/sampling.c
+
+(7) 변형 ml_kem_512_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/sampling.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/sampling.c
+-----------------------------------------------------------------------------------------
+(8) 실제 ml_kem_512_ref 코드
+/usr/bin/cc  -I/home/wngus/projects/pqc-analysis/liboqs/build/include -I/home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref -I/home/wngus/projects/pqc-analysis/liboqs/src/common/pqclean_shims \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MD -MT src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/verify.c.o -MF src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/verify.c.o.d -o src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/mlkem-native_ml-kem-512_ref/mlkem/src/verify.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/verify.c
+
+(8) 변형 ml_kem_512_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/verify.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/verify.c
+-----------------------------------------------------------------------------------------
+(9) 실제 ml_kem_512_ref 코드
+/usr/bin/cc  -I/home/wngus/projects/pqc-analysis/liboqs/build/include -I/home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/mlkem-native_ml-kem-512_ref -I/home/wngus/projects/pqc-analysis/liboqs/src/common/pqclean_shims \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MD -MT src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/kem_ml_kem_512.c.o -MF src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/kem_ml_kem_512.c.o.d -o src/kem/ml_kem/CMakeFiles/ml_kem_512_ref.dir/kem_ml_kem_512.c.o \
+    -c /home/wngus/projects/pqc-analysis/liboqs/src/kem/ml_kem/kem_ml_kem_512.c
+
+(9) 변형 ml_kem_512_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=512 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-512_ref/kem_ml_kem_512.o \
+    -c ./src/kem/ml_kem/kem_ml_kem_512.c
+-----------------------------------------------------------------------------------------
+(1) ml_kem_768_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/compress.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/compress.c
+-----------------------------------------------------------------------------------------
+(2) ml_kem_768_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/debug.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/debug.c
+-----------------------------------------------------------------------------------------
+(3) ml_kem_768_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/indcpa.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/indcpa.c
+-----------------------------------------------------------------------------------------
+(4) ml_kem_768_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/kem.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/kem.c
+-----------------------------------------------------------------------------------------
+(5) ml_kem_768_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/poly.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/poly.c
+-----------------------------------------------------------------------------------------
+(6) ml_kem_768_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/poly_k.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/poly_k.c
+-----------------------------------------------------------------------------------------
+(7) ml_kem_768_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/sampling.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/sampling.c
+-----------------------------------------------------------------------------------------
+(8) ml_kem_768_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/verify.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-768_ref/mlkem/src/verify.c
+-----------------------------------------------------------------------------------------
+(9) ml_kem_768_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-768_ref/kem_ml_kem_768.o \
+    -c ./src/kem/ml_kem/kem_ml_kem_768.c
+-----------------------------------------------------------------------------------------
+(1) ml_kem_1024_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/compress.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/compress.c
+-----------------------------------------------------------------------------------------
+(2) ml_kem_1024_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/debug.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/debug.c
+-----------------------------------------------------------------------------------------
+(3) ml_kem_1024_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/indcpa.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/indcpa.c
+-----------------------------------------------------------------------------------------
+(4) ml_kem_1024_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/kem.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/kem.c
+-----------------------------------------------------------------------------------------
+(5) ml_kem_1024_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/poly_k.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/poly_k.c
+-----------------------------------------------------------------------------------------
+(6) ml_kem_1024_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/poly.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/poly.c
+-----------------------------------------------------------------------------------------
+(7) ml_kem_1024_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/sampling.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/sampling.c
+-----------------------------------------------------------------------------------------
+(8) ml_kem_1024_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/verify.o \
+    -c ./src/kem/ml_kem/mlkem-native_ml-kem-1024_ref/mlkem/src/verify.c
+-----------------------------------------------------------------------------------------
+(9) ml_kem_1024_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=1024 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/ml_kem/mlkem-native_ml-kem-1024_ref/kem_ml_kem_1024.o \
+    -c ./src/kem/ml_kem/kem_ml_kem_1024.c
+-----------------------------------------------------------------------------------------
+(1) ml_kem 512, 768, 1024를 묶는 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/kem.o \
+    -c ./src/kem/kem.c
