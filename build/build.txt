@@ -469,3 +469,152 @@
     -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
     -MMD -MP -o build/kem/kem.o \
     -c ./src/kem/kem.c
+--------------------------------------------------------------------------------------------
+hqc 관련 command가 없음
+--------------------------------------------------------------------------------------------
+(1) mldsa-native_ml-dsa-44_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/ct.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/ct.c
+ ----------------------------------------------------------------------------------------
+(2) mldsa-native_ml-dsa-44_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/debug.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/debug.c
+----------------------------------------------------------------------------------------
+(3) mldsa-native_ml-dsa-44_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/packing.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/packing.c
+ ----------------------------------------------------------------------------------------
+(4) mldsa-native_ml-dsa-44_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/poly_kl.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/poly_kl.c
+ ----------------------------------------------------------------------------------------
+(5) mldsa-native_ml-dsa-44_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/poly.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/poly.c
+ ----------------------------------------------------------------------------------------
+(6) mldsa-native_ml-dsa-44_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/polyvec.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/polyvec.c
+ ----------------------------------------------------------------------------------------
+(7) mldsa-native_ml-dsa-44_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/sign.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/sign.c
+----------------------------------------------------------------------------------------
+(1) mldsa-native_ml-dsa-65_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/ct.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/ct.c
+----------------------------------------------------------------------------------------
+(2) mldsa-native_ml-dsa-65_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/debug.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/debug.c
+----------------------------------------------------------------------------------------
+(3) mldsa-native_ml-dsa-65_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/packing.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/packing.c
+----------------------------------------------------------------------------------------
+(4) mldsa-native_ml-dsa-65_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/poly_kl.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/poly_kl.c
+----------------------------------------------------------------------------------------
+(5) mldsa-native_ml-dsa-65_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/poly.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/poly.c
+----------------------------------------------------------------------------------------
+(6) mldsa-native_ml-dsa-65_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/polyvec.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/polyvec.c
+----------------------------------------------------------------------------------------
+(7) mldsa-native_ml-dsa-65_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/sign.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/sign.c
+----------------------------------------------------------------------------------------
+(1) mldsa-native_ml-dsa-87_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/ct.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/ct.c
+----------------------------------------------------------------------------------------
+(2) mldsa-native_ml-dsa-87_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/debug.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/debug.c
+----------------------------------------------------------------------------------------
+(3) mldsa-native_ml-dsa-87_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/packing.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/packing.c
+----------------------------------------------------------------------------------------
+(4) mldsa-native_ml-dsa-87_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/poly_kl.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/poly_kl.c
+----------------------------------------------------------------------------------------
+(5) mldsa-native_ml-dsa-87_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/poly.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/poly.c
+----------------------------------------------------------------------------------------
+(6) mldsa-native_ml-dsa-87_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/polyvec.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/polyvec.c
+----------------------------------------------------------------------------------------
+(7) mldsa-native_ml-dsa-87_ref 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/sing.o \
+    -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/sign.c
