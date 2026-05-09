@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 #include <stdlib.h>
-
+#include <oqs/kem.h>
 #include <oqs/kem_hqc.h>
 
 #if defined(OQS_ENABLE_KEM_hqc_256)

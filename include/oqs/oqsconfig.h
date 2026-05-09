@@ -134,10 +134,10 @@
 #define OQS_ENABLE_KEM_classic_mceliece_8192128f 1
 #define OQS_ENABLE_KEM_classic_mceliece_8192128f_avx2 1
 
-/* #undef OQS_ENABLE_KEM_HQC */
-/* #undef OQS_ENABLE_KEM_hqc_128 */
-/* #undef OQS_ENABLE_KEM_hqc_192 */
-/* #undef OQS_ENABLE_KEM_hqc_256 */
+#define OQS_ENABLE_KEM_HQC 1
+#define OQS_ENABLE_KEM_hqc_128 1
+#define OQS_ENABLE_KEM_hqc_192 1
+#define OQS_ENABLE_KEM_hqc_256 1
 
 #define OQS_ENABLE_KEM_KYBER 1
 #define OQS_ENABLE_KEM_kyber_512 1

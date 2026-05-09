@@ -31,14 +31,12 @@
 extern "C" {
 #endif
 
-// (수정중)
-// /** Algorithm identifier for HQC-128 KEM. */
-// #define OQS_KEM_alg_hqc_128 "HQC-128"
-// /** Algorithm identifier for HQC-192 KEM. */
-// #define OQS_KEM_alg_hqc_192 "HQC-192"
-// /** Algorithm identifier for HQC-256 KEM. */
-// #define OQS_KEM_alg_hqc_256 "HQC-256"
-// /** Algorithm identifier for Kyber512 KEM. */
+/** Algorithm identifier for HQC-128 KEM. */
+#define OQS_KEM_alg_hqc_128 "HQC-128"
+/** Algorithm identifier for HQC-192 KEM. */
+#define OQS_KEM_alg_hqc_192 "HQC-192"
+/** Algorithm identifier for HQC-256 KEM. */
+#define OQS_KEM_alg_hqc_256 "HQC-256"
 /** Algorithm identifier for ML-KEM-512 KEM. */
 #define OQS_KEM_alg_ml_kem_512 "ML-KEM-512"
 /** Algorithm identifier for ML-KEM-768 KEM. */
@@ -279,10 +277,9 @@ OQS_API OQS_STATUS OQS_KEM_decaps(const OQS_KEM *kem, uint8_t *shared_secret, co
  */
 OQS_API void OQS_KEM_free(OQS_KEM *kem);
 
-// (수정중)
-// #ifdef OQS_ENABLE_KEM_HQC 
-// #include <oqs/kem_hqc.h>
-// #endif /* OQS_ENABLE_KEM_HQC */
+#ifdef OQS_ENABLE_KEM_HQC 
+#include <oqs/kem_hqc.h>
+#endif /* OQS_ENABLE_KEM_HQC */
 #ifdef OQS_ENABLE_KEM_ML_KEM
 #include <oqs/kem_ml_kem.h>
 #endif /* OQS_ENABLE_KEM_ML_KEM */

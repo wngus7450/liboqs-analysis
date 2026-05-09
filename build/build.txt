@@ -470,7 +470,285 @@
     -MMD -MP -o build/kem/kem.o \
     -c ./src/kem/kem.c
 --------------------------------------------------------------------------------------------
-hqc 관련 command가 없음
+(1) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/code.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/code.c
+--------------------------------------------------------------------------------------------
+(2) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/fft.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/fft.c
+--------------------------------------------------------------------------------------------
+(3) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/gf.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/gf.c
+--------------------------------------------------------------------------------------------
+(4) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/gf2x.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/gf2x.c
+--------------------------------------------------------------------------------------------
+(5) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/hqc.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/hqc.c
+--------------------------------------------------------------------------------------------
+(6) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/kem.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/kem.c
+--------------------------------------------------------------------------------------------
+(7) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/parsing.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/parsing.c
+--------------------------------------------------------------------------------------------
+(8) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/reed_muller.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/reed_muller.c
+--------------------------------------------------------------------------------------------
+(9) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/reed_solomon.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/reed_solomon.c
+--------------------------------------------------------------------------------------------
+(10) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/shake_ds.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/shake_ds.c
+--------------------------------------------------------------------------------------------
+(11) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/shake_prng.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/shake_prng.c
+--------------------------------------------------------------------------------------------
+(12) pqclean_hqc-128_clean 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLK_CONFIG_PARAMETER_SET=768 -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/hqc/src/vector.o \
+    -c ./src/kem/hqc/pqclean_hqc-128_clean/vector.c
+--------------------------------------------------------------------------------------------
+(1) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/code.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/code.c
+--------------------------------------------------------------------------------------------
+(2) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/fft.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/fft.c
+--------------------------------------------------------------------------------------------
+(3) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/gf.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/gf.c
+--------------------------------------------------------------------------------------------
+(4) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/gf2x.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/gf2x.c
+--------------------------------------------------------------------------------------------
+(5) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/hqc.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/hqc.c
+--------------------------------------------------------------------------------------------
+(6) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/kem.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/kem.c
+--------------------------------------------------------------------------------------------
+(7) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/parsing.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/parsing.c
+--------------------------------------------------------------------------------------------
+(8) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/reed_muller.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/reed_muller.c
+--------------------------------------------------------------------------------------------
+(9) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/reed_solomon.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/reed_solomon.c
+--------------------------------------------------------------------------------------------
+(10) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/shake_ds.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/shake_ds.c
+--------------------------------------------------------------------------------------------
+(11) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/shake_prng.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/shake_prng.c
+--------------------------------------------------------------------------------------------
+(12) pqclean_hqc-192_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/hqc/src/vector.o \
+    -c ./src/kem/hqc/pqclean_hqc-192_clean/vector.c
+--------------------------------------------------------------------------------------------
+(1) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/code.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/code.c
+--------------------------------------------------------------------------------------------
+(2) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/fft.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/fft.c
+--------------------------------------------------------------------------------------------
+(3) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/gf.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/gf.c
+--------------------------------------------------------------------------------------------
+(4) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/gf2x.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/gf2x.c
+--------------------------------------------------------------------------------------------
+(5) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/hqc.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/hqc.c
+--------------------------------------------------------------------------------------------
+(6) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/kem.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/kem.c
+--------------------------------------------------------------------------------------------
+(7) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/parsing.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/parsing.c
+--------------------------------------------------------------------------------------------
+(8) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/reed_muller.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/reed_muller.c
+--------------------------------------------------------------------------------------------
+(9) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/reed_solomon.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/reed_solomon.c
+--------------------------------------------------------------------------------------------
+(10) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/shake_ds.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/shake_ds.c
+--------------------------------------------------------------------------------------------
+(11) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/shake_prng.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/shake_prng.c
+--------------------------------------------------------------------------------------------
+(12) pqclean_hqc-256_clean code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/hqc/src/vector.o \
+    -c ./src/kem/hqc/pqclean_hqc-256_clean/vector.c
+--------------------------------------------------------------------------------------------
+(1) pqclean_hqc-128_clean 통합 code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-128_clean/kem_hqc_128.o \
+    -c ./src/kem/hqc/kem_hqc_128.c
+--------------------------------------------------------------------------------------------
+(2) pqclean_hqc-192_clean 통합 code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-192_clean/kem_hqc_192.o \
+    -c ./src/kem/hqc/kem_hqc_192.c
+--------------------------------------------------------------------------------------------
+(3) pqclean_hqc-256_clean 통합 code
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/hqc/pqclean_hqc-256_clean/kem_hqc_256.o \
+    -c ./src/kem/hqc/kem_hqc_256.c
+--------------------------------------------------------------------------------------------
+(1) kem 최종 통합 코드 (hqc + ml_kem)
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections \
+    -MMD -MP -o build/kem/kem.o \
+    -c ./src/kem/kem.c
 --------------------------------------------------------------------------------------------
 (1) mldsa-native_ml-dsa-44_ref 코드
 /usr/bin/cc -I./include \
@@ -618,3 +896,4 @@ hqc 관련 command가 없음
     -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
     -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/sing.o \
     -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/sign.c
+----------------------------------------------------------------------------------------
