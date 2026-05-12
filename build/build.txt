@@ -894,6 +894,1033 @@
 /usr/bin/cc -I./include \
     -I./include/oqs \
     -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
-    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/sing.o \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/sign.o \
     -c ./src/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/sign.c
 ----------------------------------------------------------------------------------------
+(1) mldsa-native_ml-dsa-44_ref 통합 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/sig_ml_dsa_44.o \
+    -c ./src/sig/ml_dsa/sig_ml_dsa_44.c
+----------------------------------------------------------------------------------------
+(2) mldsa-native_ml-dsa-65_ref 통합 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/sig_ml_dsa_65.o \
+    -c ./src/sig/ml_dsa/sig_ml_dsa_65.c
+----------------------------------------------------------------------------------------
+(3) mldsa-native_ml-dsa-87_ref 통합 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/sig_ml_dsa_87.o \
+    -c ./src/sig/ml_dsa/sig_ml_dsa_87.c
+----------------------------------------------------------------------------------------
+(1) slh_dsa_c 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/slh_dsa/slh_dsa_c/sha2_256.o \
+    -c ./src/sig/slh_dsa/slh_dsa_c/sha2_256.c
+----------------------------------------------------------------------------------------
+(2) slh_dsa_c 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/slh_dsa/slh_dsa_c/sha2_512.o \
+    -c ./src/sig/slh_dsa/slh_dsa_c/sha2_512.c
+----------------------------------------------------------------------------------------
+(3) slh_dsa_c 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/slh_dsa/slh_dsa_c/sha3_api.o \
+    -c ./src/sig/slh_dsa/slh_dsa_c/sha3_api.c
+----------------------------------------------------------------------------------------
+(4) slh_dsa_c 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/slh_dsa/slh_dsa_c/sha3_f1600.o \
+    -c ./src/sig/slh_dsa/slh_dsa_c/sha3_f1600.c
+----------------------------------------------------------------------------------------
+(5) slh_dsa_c 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/slh_dsa/slh_dsa_c/slh_dsa.o \
+    -c ./src/sig/slh_dsa/slh_dsa_c/slh_dsa.c
+----------------------------------------------------------------------------------------
+(6) slh_dsa_c 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/slh_dsa/slh_dsa_c/slh_prehash.o \
+    -c ./src/sig/slh_dsa/slh_dsa_c/slh_prehash.c
+----------------------------------------------------------------------------------------
+(7) slh_dsa_c 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/slh_dsa/slh_dsa_c/slh_sha2.o \
+    -c ./src/sig/slh_dsa/slh_dsa_c/slh_sha2.c
+----------------------------------------------------------------------------------------
+(8) slh_dsa_c 코드
+/usr/bin/cc -I./include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/slh_dsa/slh_dsa_c/slh_shake.o \
+    -c ./src/sig/slh_dsa/slh_dsa_c/slh_shake.c
+----------------------------------------------------------------------------------------
+(1) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_sha2_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_224/slh_dsa_sha2_224_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_sha2_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_256/slh_dsa_sha2_256_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_sha2_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_384/slh_dsa_sha2_384_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_sha2_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512/slh_dsa_sha2_512_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_sha2_512_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_224/slh_dsa_sha2_512_224_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_sha2_512_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha2_512_256/slh_dsa_sha2_512_256_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_sha3_224 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_224/slh_dsa_sha3_224_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_sha3_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_256/slh_dsa_sha3_256_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_sha3_384 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_384/slh_dsa_sha3_384_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_sha3_512 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_sha3_512/slh_dsa_sha3_512_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_shake_128 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_128/slh_dsa_shake_128_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) prehash_shake_256 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/prehash_shake_256/slh_dsa_shake_256_prehash_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_128f.c
+----------------------------------------------------------------------------------------
+(2) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_128s.c
+----------------------------------------------------------------------------------------
+(3) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_192f.c
+----------------------------------------------------------------------------------------
+(4) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_192s.c
+----------------------------------------------------------------------------------------
+(5) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_256f.c
+----------------------------------------------------------------------------------------
+(6) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_sha2_256s.c
+----------------------------------------------------------------------------------------
+(7) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_128f.c
+----------------------------------------------------------------------------------------
+(8) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_128s.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_128s.c
+----------------------------------------------------------------------------------------
+(9) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_192f.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_192f.c
+----------------------------------------------------------------------------------------
+(10) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_192s.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_192s.c
+----------------------------------------------------------------------------------------
+(11) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_256f.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_256f.c
+----------------------------------------------------------------------------------------
+(12) pure 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_256s.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_256s.c
+----------------------------------------------------------------------------------------
+(1) sig 통합(ml_dsa+slh_dsa) 코드
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/sig.o \
+    -c ./src/sig/sig.c
+----------------------------------------------------------------------------------------
+(1) internal 라이브러리 코드
+/usr/bin/ar qc build/lib/liboqs-internal.a \
+  build/common/sha3/xkcp_low/KeccakP-1600/plain-64bits/KeccakP-1600-opt64.o build/common/sha3/xkcp_low/KeccakP-1600times4/serial/KeccakP-1600-times4-on1.o \
+  build/common/aes/aes_impl.o build/common/aes/aes_c.o build/common/aes/aes.o \
+  build/common/sha2/sha2.o \
+  build/common/sha3/xkcp_sha3.o build/common/sha3/xkcp_sha3x4.o build/common/sha3/sha3.o build/common/sha3/sha3x4.o \
+  build/common/common.o \
+  build/common/rand/rand_nist.o

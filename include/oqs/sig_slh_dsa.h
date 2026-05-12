@@ -5,7 +5,6 @@
 #define OQS_SIG_SLH_DSA_H
 
 #include <oqs/oqs.h>
-#include <oqs/sig.h>
 
 #if defined(OQS_ENABLE_SIG_slh_dsa_pure_sha2_128s)
 #define OQS_SIG_slh_dsa_pure_sha2_128s_length_public_key 32
