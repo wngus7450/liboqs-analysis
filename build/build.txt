@@ -1916,11 +1916,7 @@
     -MMD -MP -o build/sig/sig.o \
     -c ./src/sig/sig.c
 ----------------------------------------------------------------------------------------
-(1) internal 라이브러리 코드
-/usr/bin/ar qc build/lib/liboqs-internal.a \
-  build/common/sha3/xkcp_low/KeccakP-1600/plain-64bits/KeccakP-1600-opt64.o build/common/sha3/xkcp_low/KeccakP-1600times4/serial/KeccakP-1600-times4-on1.o \
-  build/common/aes/aes_impl.o build/common/aes/aes_c.o build/common/aes/aes.o \
-  build/common/sha2/sha2.o \
-  build/common/sha3/xkcp_sha3.o build/common/sha3/xkcp_sha3x4.o build/common/sha3/sha3.o build/common/sha3/sha3x4.o \
-  build/common/common.o \
-  build/common/rand/rand_nist.o
+(1) algorithms 라이브러리 코드
+/usr/bin/ar qc build/lib/liboqs-algorithms.a \
+    $(find build/kem build/sig -type f -name '*.o' | sort) \
+    && /usr/bin/ranlib build/lib/liboqs-algorithms.a
