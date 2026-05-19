@@ -1,0 +1,50 @@
+\section{예제 코드와 실행 결과 설명 (Examples)}
+
+\subsection{KEM 기본 사용 예제}
+\begin{lstlisting}[style=cstyle,caption={ML-KEM-768 encaps/decaps 최소 예제}]
+#include <oqs/oqs.h>
+#include <oqs/kem.h>
+#include <oqs/common.h>
+
+int main(void) {
+    OQS_init();
+
+    OQS_KEM *kem = OQS_KEM_new(OQS_KEM_alg_ml_kem_768);
+    if (kem == NULL) return 1;
+
+    uint8_t *pk = OQS_MEM_malloc(kem->length_public_key);
+    uint8_t *sk = OQS_MEM_malloc(kem->length_secret_key);
+    uint8_t *ct = OQS_MEM_malloc(kem->length_ciphertext);
+    uint8_t *ss_e = OQS_MEM_malloc(kem->length_shared_secret);
+    uint8_t *ss_d = OQS_MEM_malloc(kem->length_shared_secret);
+
+    if (OQS_KEM_keypair(kem, pk, sk) != OQS_SUCCESS) return 2;
+    if (OQS_KEM_encaps(kem, ct, ss_e, pk) != OQS_SUCCESS) return 3;
+    if (OQS_KEM_decaps(kem, ss_d, ct, sk) != OQS_SUCCESS) return 4;
+
+    int ok = (OQS_MEM_secure_bcmp(ss_e, ss_d, kem->length_shared_secret) == 0);
+
+    OQS_MEM_secure_free(sk, kem->length_secret_key);
+    OQS_MEM_secure_free(ss_e, kem->length_shared_secret);
+    OQS_MEM_secure_free(ss_d, kem->length_shared_secret);
+    OQS_MEM_insecure_free(pk);
+    OQS_MEM_insecure_free(ct);
+    OQS_KEM_free(kem);
+    OQS_destroy();
+
+    return ok ? 0 : 5;
+}
+\end{lstlisting}
+
+\subsection{실행 결과 해석}
+정상 흐름에서는 \texttt{keypair -> encaps -> decaps}가 모두 \texttt{OQS\_SUCCESS}를 반환하고,
+\texttt{ss\_e}와 \texttt{ss\_d}가 동일해야 한다.
+
+\subsection{테스트 코드 기반 참고}
+\texttt{tests/kat\_kem.c}는 NIST KAT 스타일 출력 형식(
+\texttt{count, seed, pk, sk, ct, ss})을 생성하며,
+다중 카운트 검증은 \texttt{--all} 플래그로 수행한다.
+
+\subsection*{Assumption}
+예제 컴파일 명령은 프로젝트의 실제 export target 설정에 따라 달라질 수 있으므로,
+헤더/라이브러리 경로는 환경에 맞춰 조정한다.

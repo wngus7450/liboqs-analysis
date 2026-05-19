@@ -1,0 +1,77 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\else
+  \usepackage{fontspec}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{TeX Gyre Termes}
+\fi
+\usepackage{kotex}
+\ifPDFTeX\else
+  \IfFontExistsTF{Noto Serif CJK KR}{
+    \setmainhangulfont{Noto Serif CJK KR}
+  }{
+    \IfFontExistsTF{NanumMyeongjo}{
+      \setmainhangulfont{NanumMyeongjo}
+    }{}
+  }
+\fi
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\geometry{margin=1in}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  urlcolor=blue!60!black,
+  pdftitle={liboqs-analysis Library Documentation}
+}
+
+\lstdefinestyle{cstyle}{
+  language=C,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue!70!black},
+  commentstyle=\color{teal!60!black},
+  stringstyle=\color{orange!60!black},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  numbersep=8pt,
+  breaklines=true,
+  frame=single,
+  tabsize=2,
+  showstringspaces=false
+}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+
+\title{liboqs 라이브러리 설명서\\\large Technical Documentation}
+\author{김주현}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\input{sections/01_overview}
+\input{sections/02_build_and_install}
+\input{sections/03_architecture}
+\input{sections/04_public_api}
+\input{sections/05_examples}
+\input{sections/06_performance_security}
+\input{sections/07_limitations}
+\input{sections/08_dev_rules}
+
+\end{document}

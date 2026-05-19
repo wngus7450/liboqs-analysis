@@ -1,0 +1,40 @@
+\section{라이브러리 구조와 핵심 모듈 (Architecture)}
+
+\subsection{디렉터리 구조}
+\begin{lstlisting}[style=cstyle,caption={핵심 디렉터리 개요}]
+include/oqs/   # public API headers
+src/common/    # common crypto utilities (AES/SHA/RNG/memory)
+src/kem/       # KEM interface and algorithm implementations
+tests/         # KAT and helper-based validation code
+build/lib/     # static library outputs
+\end{lstlisting}
+
+\subsection{레이어 관점}
+\begin{itemize}[leftmargin=*]
+\item API Layer: \texttt{include/oqs/*.h}
+\item Dispatch Layer: \texttt{src/kem/kem.c} (알고리즘 식별자 매핑, \texttt{OQS\_KEM\_new})
+\item Algorithm Layer: \texttt{src/kem/hqc/*}, \texttt{src/kem/ml\_kem/*}
+\item Utility Layer: \texttt{src/common/*} (메모리/난수/해시/대칭키)
+\end{itemize}
+
+\subsection{KEM 디스패치 모델}
+\texttt{OQS\_KEM\_new(method\_name)}가 문자열 식별자를 기반으로 알고리즘 인스턴스를 생성한다.
+호출자는 생성된 \texttt{OQS\_KEM} 구조체의 길이 필드와 함수 포인터를 통해
+\texttt{keypair}, \texttt{encaps}, \texttt{decaps}를 공통 방식으로 호출한다.
+
+\subsection{정적 라이브러리 분리}
+\begin{table}[h!]
+\centering
+\begin{tabular}{lll}
+\toprule
+라이브러리 & 역할(추정) & 관련 모듈 \\
+\midrule
+\texttt{liboqs-algorithms.a} & 알고리즘 구현 본체 & KEM/SIG 알고리즘 단위 코드 \\
+\texttt{liboqs-internal.a} & 공통 내부 유틸리티 & SHA3 저수준, AES, RNG 등 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{Assumption}
+정적 라이브러리별 상세 오브젝트 매핑은 빌드 스크립트 전체를 읽지 않고
+현재 트리 및 \texttt{build/build.txt} 단서를 기준으로 기술했다.

@@ -1,0 +1,34 @@
+\section{설치 및 빌드 (Build \& Install)}
+
+\subsection{현재 확인된 빌드 특성}
+\texttt{include/oqs/oqsconfig.h} 기준:
+\begin{itemize}[leftmargin=*]
+\item 버전: \texttt{OQS\_VERSION\_TEXT = 0.15.0}
+\item 플랫폼: \texttt{x86\_64 Linux}, 배포 빌드 플래그 활성
+\item OpenSSL 연동: \texttt{OQS\_USE\_OPENSSL=1}
+\item 스레드: \texttt{OQS\_USE\_PTHREADS=1}
+\end{itemize}
+
+\subsection{권장 빌드 절차}
+프로젝트 루트에서 다음 흐름을 권장한다.
+
+\begin{lstlisting}[style=cstyle,caption={Configure + Build 예시 (CMake)}]
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+cmake --build build -j
+\end{lstlisting}
+
+\subsection{산출물 확인}
+\begin{lstlisting}[style=cstyle,caption={주요 정적 라이브러리 산출물}]
+build/lib/liboqs-algorithms.a
+build/lib/liboqs-internal.a
+\end{lstlisting}
+
+\subsection{테스트 실행 예시}
+\begin{lstlisting}[style=cstyle,caption={KAT 기반 KEM 테스트 예시}]
+# Binary path may differ by build configuration
+./build/tests/kat_kem ML-KEM-768
+\end{lstlisting}
+
+\subsection*{Assumption}
+저장소 루트에 \texttt{CMakeLists.txt}가 존재한다고 가정하고 표준 CMake 명령을 제시했다.
+실제 빌드 시스템 차이가 있으면 동일 원칙(구성-빌드-테스트)으로 명령을 치환한다.

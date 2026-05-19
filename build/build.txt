@@ -1920,3 +1920,22 @@
 /usr/bin/ar qc build/lib/liboqs-algorithms.a \
     $(find build/kem build/sig -type f -name '*.o' | sort) \
     && /usr/bin/ranlib build/lib/liboqs-algorithms.a
+----------------------------------------------------------------------------------------
+(1) kem 테스트 코드
+cc -I/home/wngus/projects/liboqs-analysis/include -std=gnu11 -O2 \
+    /home/wngus/projects/liboqs-analysis/tests/kat_kem.c \
+    /home/wngus/projects/liboqs-analysis/tests/test_helpers.c \
+    -Wl,--start-group \
+    /home/wngus/projects/liboqs-analysis/build/lib/liboqs-algorithms.a \
+    /home/wngus/projects/liboqs-analysis/build/lib/liboqs-internal.a \
+    -Wl,--end-group \
+    -lm -o /tmp/kat_kem
+
+cc -I/home/wngus/projects/liboqs-analysis/include -std=gnu11 -O2 \
+    /home/wngus/projects/liboqs-analysis/tests/kat_sig.c \
+    /home/wngus/projects/liboqs-analysis/tests/test_helpers.c \
+    -Wl,--start-group \
+    /home/wngus/projects/liboqs-analysis/build/lib/liboqs-algorithms.a \
+    /home/wngus/projects/liboqs-analysis/build/lib/liboqs-internal.a \
+    -Wl,--end-group \
+    -lm -o /tmp/kat_sig

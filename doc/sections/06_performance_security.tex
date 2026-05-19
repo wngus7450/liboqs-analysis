@@ -1,0 +1,23 @@
+\section{성능/보안 고려사항 (Performance \& Security)}
+
+\subsection{성능 관점}
+\begin{itemize}[leftmargin=*]
+\item 빌드 플래그: \texttt{-O3}, \texttt{-fdata-sections}, \texttt{-ffunction-sections}, \texttt{--gc-sections}
+\item 아키텍처 최적화 분기: \texttt{oqsconfig.h}의 x86\_64 관련 define, AVX 계열 조건부 사용
+\item 알고리즘별 trade-off: ML-KEM/HQC 파라미터 세트별 키/암호문 크기 및 연산비용 상이
+\end{itemize}
+
+\subsection{보안 관점}
+\begin{itemize}[leftmargin=*]
+\item 민감 버퍼는 \texttt{OQS\_MEM\_cleanse}, \texttt{OQS\_MEM\_secure\_free} 경로 사용
+\item 공유비밀 비교는 타이밍 누설 완화를 위해 \texttt{OQS\_MEM\_secure\_bcmp} 사용
+\item RNG 소스 변경 시(\texttt{OQS\_randombytes\_switch\_algorithm}) 테스트/검증 절차 필수
+\item 오류 처리 시 조기 반환보다 정리(cleanup) 블록 일원화 권장
+\end{itemize}
+
+\subsection{운영 권장사항}
+\begin{enumerate}[leftmargin=*]
+\item 알고리즘 enable 여부를 시작 시점에 검사해 fallback 정책을 정의한다.
+\item OpenSSL/플랫폼 업데이트 시 회귀 테스트(KAT + 상호운용성)를 수행한다.
+\item CI에 최소 1개 KEM과 1개 SIG smoke test를 배치한다.
+\end{enumerate}

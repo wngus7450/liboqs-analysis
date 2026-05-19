@@ -1,0 +1,30 @@
+\section{개발 규칙 (Development Rules)}
+
+\subsection{코딩/리뷰 규칙}
+\begin{enumerate}[leftmargin=*]
+\item 공개 API 변경 시 \texttt{include/oqs/*.h}와 구현체를 동시에 갱신한다.
+\item 알고리즘 추가/삭제 시 식별자 목록, count, enable 분기를 일관되게 수정한다.
+\item 민감 데이터 메모리 해제는 secure API를 우선 적용한다.
+\item 실패 경로는 단일 cleanup 라벨로 정리해 누수/중복 해제를 방지한다.
+\end{enumerate}
+
+\subsection{테스트 규칙}
+\begin{itemize}[leftmargin=*]
+\item KEM: \texttt{keypair/encaps/decaps} 왕복 성공 + 공유비밀 일치 필수
+\item SIG: 서명/검증 정상 케이스 + 변조 입력(bitflip) 실패 케이스 필수
+\item 알고리즘 enable/disable 설정별 smoke test 수행
+\end{itemize}
+
+\subsection{문서 유지보수 규칙}
+\begin{itemize}[leftmargin=*]
+\item 새 알고리즘 추가 시 본 문서 3장(구조), 4장(API), 5장(예제) 동시 갱신
+\item 빌드 옵션 변경 시 2장 업데이트
+\item Assumption 항목은 실제 확인 시 제거하거나 근거 링크로 대체
+\end{itemize}
+
+\subsection{참고 링크}
+\begin{itemize}[leftmargin=*]
+\item 프로젝트 루트: \texttt{/home/wngus/projects/liboqs-analysis}
+\item Public headers: \texttt{include/oqs/}
+\item Test entry points: \texttt{tests/kat\_kem.c}, \texttt{tests/kat\_sig.c}
+\end{itemize}

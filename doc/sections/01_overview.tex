@@ -1,0 +1,35 @@
+\section{개요 (Overview)}
+
+\subsection{프로젝트 목적}
+\texttt{liboqs-analysis}는 포스트양자암호(PQC) 라이브러리 \texttt{liboqs}의 분석/실험 목적 변형 빌드로 보이며,
+현재 코드베이스 기준으로는 KEM(Key Encapsulation Mechanism) 경로에 집중된 구성이다.
+
+핵심 퍼블릭 헤더는 \texttt{include/oqs/oqs.h}, \texttt{include/oqs/kem.h}, \texttt{include/oqs/common.h}이며,
+산출물은 \texttt{build/lib/liboqs-algorithms.a}, \texttt{build/lib/liboqs-internal.a} 정적 라이브러리 형태로 확인된다.
+
+ABCDDFDHJHFKJSHHKJHKJHJ
+
+\subsection{코드베이스 스냅샷}
+\begin{itemize}[leftmargin=*]
+\item 공개 인터페이스: \texttt{include/oqs/*.h}
+\item 핵심 구현: \texttt{src/common}, \texttt{src/kem}
+\item 테스트: \texttt{tests/kat\_kem.c}, \texttt{tests/kat\_sig.c}, \texttt{tests/test\_helpers.*}
+\end{itemize}
+
+\subsection{지원 알고리즘 범주}
+\begin{table}[h!]
+\centering
+\begin{tabular}{lll}
+\toprule
+범주 & 예시 알고리즘 & 근거 파일 \\
+\midrule
+KEM & HQC-128/192/256, ML-KEM-512/768/1024 & \texttt{include/oqs/kem.h}, \texttt{src/kem/kem.c} \\
+Signature & ML-DSA, SLH-DSA 등 식별자 다수 & \texttt{include/oqs/sig.h} \\
+Common Crypto & AES, SHA2, SHA3, RNG & \texttt{src/common/*}, \texttt{include/oqs/common.h} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{Assumption}
+본 문서는 사용자 제공 작업 디렉터리(\texttt{build/lib})와 상위 프로젝트 트리 스캔 결과를 기반으로 작성되었다.
+상위 원본 저장소(예: upstream liboqs)와의 동기화 상태는 본 문서 범위에 포함하지 않는다.
