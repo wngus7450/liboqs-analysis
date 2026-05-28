@@ -34,3 +34,10 @@
 \contentsline {subsection}{\numberline {8.2}테스트 규칙}{8}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}문서 유지보수 규칙}{8}{subsection.8.3}%
 \contentsline {subsection}{\numberline {8.4}참고 링크}{8}{subsection.8.4}%
+\contentsline {section}{\numberline {9}KAT 실행/판정 가이드 (기초 + 트러블슈팅)}{8}{section.9}%
+\contentsline {subsection}{\numberline {9.1}이 장의 목적}{8}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}기초 개념: 종료코드(Exit Code)}{9}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}자주 발생하는 에러 해석}{9}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}현재 프로젝트 기준 KAT 실행 명령}{9}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}성공 판정 규칙}{9}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}문서 목차를 이렇게 나눈 이유}{10}{subsection.9.6}%

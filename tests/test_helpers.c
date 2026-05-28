@@ -4,7 +4,9 @@
 #include <string.h>
 
 #include <oqs/oqs.h>
+#include <oqs/rand.h>
 #include <oqs/rand_nist.h>  // Internal NIST DRBG API
+#include <oqs/randombytes.h>
 #include <oqs/sha3.h>       // Internal SHA3 API
 #include <oqs/sig.h>
 #include <oqs/kem.h>

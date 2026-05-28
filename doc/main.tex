@@ -29,6 +29,9 @@
 \usepackage{enumitem}
 \usepackage{titlesec}
 \geometry{margin=1in}
+% Force section numbering in document body
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
 
 \hypersetup{
   colorlinks=true,
@@ -53,8 +56,9 @@
   showstringspaces=false
 }
 
-\titleformat{\section}{\large\bfseries}{}{0em}{}
-\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{\thesubsubsection.}{0.6em}{}
 
 \title{liboqs 라이브러리 설명서\\\large Technical Documentation}
 \author{김주현}
@@ -73,5 +77,6 @@
 \input{sections/06_performance_security}
 \input{sections/07_limitations}
 \input{sections/08_dev_rules}
+\input{sections/09_kat_debug_guide}
 
 \end{document}

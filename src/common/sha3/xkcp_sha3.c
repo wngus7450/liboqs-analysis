@@ -21,6 +21,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+#undef OQS_ENABLE_SHA3_xkcp_low_avx2
+#define OQS_ENABLE_SHA3_xkcp_low_avx2 0
+#undef OQS_USE_SHA3_AVX512VL
+#define OQS_USE_SHA3_AVX512VL 0
+
 #define KECCAK_CTX_ALIGNMENT 32
 #define _KECCAK_CTX_BYTES (200+sizeof(uint64_t))
 #define KECCAK_CTX_BYTES (KECCAK_CTX_ALIGNMENT * \
@@ -42,8 +47,8 @@ extern struct OQS_SHA3_callbacks sha3_default_callbacks;
 static void Keccak_Dispatch(void) {
 // TODO: Simplify this when we have a Windows-compatible AVX2 implementation of SHA3
 #if defined(OQS_DIST_X86_64_BUILD)
-#if defined(OQS_ENABLE_SHA3_xkcp_low_avx2)
-#if defined(OQS_USE_SHA3_AVX512VL)
+#if defined(OQS_ENABLE_SHA3_xkcp_low_avx2) && OQS_ENABLE_SHA3_xkcp_low_avx2
+#if defined(OQS_USE_SHA3_AVX512VL) && OQS_USE_SHA3_AVX512VL
 	if (OQS_CPU_has_extension(OQS_CPU_EXT_AVX512)) {
 		extern const struct OQS_SHA3_callbacks sha3_avx512vl_callbacks;
 

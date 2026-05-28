@@ -77,9 +77,9 @@ OQS_API int OQS_KEM_alg_is_enabled(const char *method_name) {
 #else
 		return 0;
 #endif
-
-		///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ENABLED_CASE_END
-	} 
+	}
+	///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ENABLED_CASE_END
+	return 0;
 }
 
 OQS_API OQS_KEM *OQS_KEM_new(const char *method_name) {
@@ -129,9 +129,9 @@ OQS_API OQS_KEM *OQS_KEM_new(const char *method_name) {
 #else
 		return NULL;
 #endif
-
-		///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_NEW_CASE_END
-	} 
+	}
+	///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_NEW_CASE_END
+	return NULL;
 }
 
 OQS_API OQS_STATUS OQS_KEM_keypair_derand(const OQS_KEM *kem, uint8_t *public_key, uint8_t *secret_key, const uint8_t *seed) {

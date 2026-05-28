@@ -1,0 +1,76 @@
+\section{KAT 실행/판정 가이드 (기초 + 트러블슈팅)}
+
+\subsection{이 장의 목적}
+이 장은 실제 작업 중 가장 자주 헷갈리는 항목을 빠르게 해소하기 위한 운영 가이드다.
+특히 다음 질문에 답한다.
+\begin{itemize}[leftmargin=*]
+\item 왜 종료코드 \texttt{0}이면 성공인가?
+\item \texttt{127}은 무엇을 의미하는가?
+\item \texttt{kat\_kem}, \texttt{kat\_sig} 실행 파일이 없다는 에러는 왜 발생하는가?
+\item 어떤 명령으로 현재 구성의 KAT 성공 여부를 한 번에 확인하는가?
+\end{itemize}
+
+\subsection{기초 개념: 종료코드(Exit Code)}
+유닉스/리눅스 관례에서 프로그램 종료 상태는 정수 코드로 표현된다.
+\begin{itemize}[leftmargin=*]
+\item \texttt{0}: 정상 종료(성공)
+\item \texttt{0 이외}: 비정상 종료(실패/오류)
+\end{itemize}
+
+쉘(\texttt{zsh}, \texttt{bash})에서는 직전 명령의 종료코드를 \texttt{\$?}로 확인한다.
+\begin{lstlisting}[style=cstyle,caption={종료코드 확인 예시}]
+./build/tests/kat_kem ml-kem-512 > /tmp/kat_mlkem512.out
+echo $?
+\end{lstlisting}
+
+\subsection{자주 발생하는 에러 해석}
+\subsubsection*{1) \texttt{zsh: no such file or directory: ./build/tests/kat\_sig}}
+의미: 알고리즘 실패가 아니라, 실행 파일 자체가 아직 생성되지 않았다는 뜻이다.
+
+해결:
+\begin{lstlisting}[style=cstyle]
+make kat_sig
+\end{lstlisting}
+
+\subsubsection*{2) 종료코드 \texttt{127}}
+의미: 명령 실행 실패(대부분 실행 파일 경로 오류/파일 부재).  
+즉 \texttt{kat\_sig ML-DSA-44 => 127}은 ``ML-DSA가 틀림''이 아니라 ``kat\_sig 파일이 없음''에 가깝다.
+
+\subsection{현재 프로젝트 기준 KAT 실행 명령}
+\subsubsection*{KEM 일괄 실행}
+\begin{lstlisting}[style=cstyle]
+for alg in hqc-128 hqc-192 hqc-256 ml-kem-512 ml-kem-768 ml-kem-1024; do
+  ./build/tests/kat_kem "$alg" > /tmp/kat_kem_$alg.out
+  echo "kat_kem $alg => $?"
+done
+\end{lstlisting}
+
+\subsubsection*{SIG 일괄 실행}
+\begin{lstlisting}[style=cstyle]
+for alg in ML-DSA-44 ML-DSA-65 ML-DSA-87 SLH_DSA_PURE_SHA2_128S; do
+  ./build/tests/kat_sig "$alg" > /tmp/kat_sig_$alg.out
+  echo "kat_sig $alg => $?"
+done
+\end{lstlisting}
+
+\subsection{성공 판정 규칙}
+실무에서는 아래 규칙만 기억하면 된다.
+\begin{itemize}[leftmargin=*]
+\item 각 알고리즘 줄의 결과가 \texttt{=> 0}이면 해당 KAT 성공
+\item \texttt{=> 0}이 아니면 실패 로그를 \texttt{/tmp/kat\_*.out}에서 확인
+\item \texttt{127}이면 먼저 바이너리 존재 여부(\texttt{make kat\_kem}, \texttt{make kat\_sig})를 점검
+\end{itemize}
+
+\subsection{문서 목차를 이렇게 나눈 이유}
+본 문서는 학습 순서와 디버깅 효율을 기준으로 구성했다.
+\begin{enumerate}[leftmargin=*]
+\item \textbf{개요/구조 먼저}: 프로젝트 목적과 파일 위치를 알아야 경로 오류를 줄일 수 있다.
+\item \textbf{빌드/실행 다음}: 실제 산출물(\texttt{kat\_kem}, \texttt{kat\_sig}) 생성이 가장 먼저 필요하다.
+\item \textbf{판정 규칙 별도 분리}: 종료코드 해석을 독립시켜 오해(\texttt{127} vs 알고리즘 실패)를 방지한다.
+\item \textbf{트러블슈팅 독립 장}: 에러 상황에서 바로 검색해 해결할 수 있도록 했다.
+\item \textbf{제약/확장 마지막}: 현재 상태를 검증한 뒤 제한사항을 보는 흐름이 이해에 유리하다.
+\end{enumerate}
+
+\subsection*{Assumption}
+본 가이드는 현재 \texttt{liboqs-analysis} 작업 트리의 커스텀 빌드/테스트 구성을 기준으로 한다.
+상위 원본 저장소와 1:1 동등 동작을 보장하는 문서는 아니다.
