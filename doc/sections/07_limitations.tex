@@ -1,19 +1,5 @@
 \section{한계점 (Limitations)}
 
-\subsection{코드 스냅샷 기준 관찰된 리스크}
-\begin{itemize}[leftmargin=*]
-\item \texttt{include/oqs/kem.h}의 \texttt{OQS\_KEM\_algs\_length(41)} 대비
-      \texttt{src/kem/kem.c}의 식별자 배열 항목 수가 축소되어 보인다.
-\item \texttt{src/kem/kem.c}의 일부 분기에서 fallback return 문이 누락된 형태로 보여,
-      컴파일러/설정에 따라 경고 또는 UB 가능성이 있다.
-\item \texttt{build/build.txt}는 공식 빌드 매니페스트보다 분석 메모 성격이 강해
-      재현 가능한 빌드 정의로 사용하기 어렵다.
-\end{itemize}
-
-\subsection{문서 범위 한계}
-본 문서는 현재 로컬 트리 탐색 결과 기반이며,
-외부 종속성 버전(OpenSSL 세부 ABI 등)과 상위 저장소 정책 변화는 자동 반영되지 않는다.
-
-\subsection*{Assumption}
-상기 리스크는 현재 체크아웃 상태를 기준으로 하며,
-다른 브랜치/커밋에서는 이미 해소되었을 수 있다.
+\subsection{문서 범위}
+본 문서는 현재 프로젝트의 빌드/테스트 흐름과 공개 헤더 사용법을 설명한다.
+외부 종속성의 세부 ABI나 배포 환경별 패키징 차이는 별도 검증 대상이다.

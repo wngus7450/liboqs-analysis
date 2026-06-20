@@ -5,6 +5,7 @@
 include/oqs/   # public API headers
 src/common/    # common crypto utilities (AES/SHA/RNG/memory)
 src/kem/       # KEM interface and algorithm implementations
+src/sig/       # signature interface and algorithm implementations
 tests/         # KAT and helper-based validation code
 build/lib/     # static library outputs
 \end{lstlisting}
@@ -12,29 +13,29 @@ build/lib/     # static library outputs
 \subsection{레이어 관점}
 \begin{itemize}[leftmargin=*]
 \item API Layer: \texttt{include/oqs/*.h}
-\item Dispatch Layer: \texttt{src/kem/kem.c} (알고리즘 식별자 매핑, \texttt{OQS\_KEM\_new})
-\item Algorithm Layer: \texttt{src/kem/hqc/*}, \texttt{src/kem/ml\_kem/*}
+\item Dispatch Layer: \texttt{src/kem/kem.c}, \texttt{src/sig/sig.c} (알고리즘 식별자 매핑, 객체 생성)
+\item KEM Algorithm Layer: \texttt{src/kem/hqc/*}, \texttt{src/kem/ml\_kem/*}
+\item SIG Algorithm Layer: \texttt{src/sig/ml\_dsa/*}, \texttt{src/sig/slh\_dsa/*}
 \item Utility Layer: \texttt{src/common/*} (메모리/난수/해시/대칭키)
 \end{itemize}
 
-\subsection{KEM 디스패치 모델}
-\texttt{OQS\_KEM\_new(method\_name)}가 문자열 식별자를 기반으로 알고리즘 인스턴스를 생성한다.
-호출자는 생성된 \texttt{OQS\_KEM} 구조체의 길이 필드와 함수 포인터를 통해
+\subsection{KEM/SIG 디스패치 모델}
+\texttt{OQS\_KEM\_new(method\_name)}와 \texttt{OQS\_SIG\_new(method\_name)}는
+문자열 식별자를 기반으로 알고리즘 인스턴스를 생성한다.
+
+KEM 경로에서는 생성된 \texttt{OQS\_KEM} 구조체의 길이 필드와 함수 포인터를 통해
 \texttt{keypair}, \texttt{encaps}, \texttt{decaps}를 공통 방식으로 호출한다.
+SIG 경로에서는 생성된 \texttt{OQS\_SIG} 구조체를 통해
+\texttt{keypair}, \texttt{sign}, \texttt{verify}를 공통 방식으로 호출한다.
 
 \subsection{정적 라이브러리 분리}
-\begin{table}[h!]
-\centering
-\begin{tabular}{lll}
+\begin{center}
+\begin{tabular}{p{0.27\textwidth}p{0.34\textwidth}p{0.31\textwidth}}
 \toprule
-라이브러리 & 역할(추정) & 관련 모듈 \\
+라이브러리 & 역할 & 관련 모듈 \\
 \midrule
-\texttt{liboqs-algorithms.a} & 알고리즘 구현 본체 & KEM/SIG 알고리즘 단위 코드 \\
-\texttt{liboqs-internal.a} & 공통 내부 유틸리티 & SHA3 저수준, AES, RNG 등 \\
+\texttt{liboqs.a} & 알고리즘 및 공통 구현 본체 & KEM/SIG, AES, SHA, RNG 등 \\
+\texttt{liboqs-internal.a} & 내부 링크 구조 유지를 위한 보조 아카이브 & 현재 Makefile에서는 빈 아카이브로 생성 \\
 \bottomrule
 \end{tabular}
-\end{table}
-
-\subsection*{Assumption}
-정적 라이브러리별 상세 오브젝트 매핑은 빌드 스크립트 전체를 읽지 않고
-현재 트리 및 \texttt{build/build.txt} 단서를 기준으로 기술했다.
+\end{center}

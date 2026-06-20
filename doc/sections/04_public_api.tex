@@ -4,8 +4,9 @@
 \begin{itemize}[leftmargin=*]
 \item \texttt{<oqs/oqs.h>}: 통합 진입 헤더
 \item \texttt{<oqs/common.h>}: 상태 코드, 초기화, 메모리, CPU 확장 체크
-\item \texttt{<oqs/kem.h>}: KEM 객체/함수
 \item \texttt{<oqs/rand.h>}: RNG 선택 및 바이트 생성
+\item \texttt{<oqs/kem.h>}: KEM 객체/함수
+\item \texttt{<oqs/sig.h>}: 전자서명 객체/함수
 \end{itemize}
 
 \subsection{라이프사이클 API}
@@ -29,6 +30,15 @@
 \item \texttt{OQS\_KEM\_free()} 및 민감정보 secure free
 \end{enumerate}
 
+\subsection{SIG API 흐름}
+\begin{enumerate}[leftmargin=*]
+\item \texttt{OQS\_SIG\_alg\_identifier(i)} 또는 문자열 상수로 알고리즘 선택
+\item \texttt{OQS\_SIG\_new(name)}로 객체 생성
+\item 길이 필드(\texttt{length\_public\_key}, \texttt{length\_signature} 등) 기반 버퍼 할당
+\item \texttt{OQS\_SIG\_keypair}, \texttt{OQS\_SIG\_sign}, \texttt{OQS\_SIG\_verify} 호출
+\item \texttt{OQS\_SIG\_free()} 및 민감정보 secure free
+\end{enumerate}
+
 \subsection{메모리 API 권장 패턴}
 \begin{itemize}[leftmargin=*]
 \item 민감정보(비밀키/공유비밀): \texttt{OQS\_MEM\_secure\_free}
@@ -37,10 +47,6 @@
 \end{itemize}
 
 \subsection{알고리즘 선택 시 주의}
-\texttt{OQS\_KEM\_alg\_count()}와 \texttt{OQS\_KEM\_alg\_identifier()}로 열거되는 목록이
+\texttt{OQS\_KEM\_alg\_count()}, \texttt{OQS\_SIG\_alg\_count()}와 각 \texttt{alg\_identifier()}로 열거되는 목록이
 실행 시점의 enabled 상태와 동일하지 않을 수 있으므로,
-실사용 시 \texttt{OQS\_KEM\_alg\_is\_enabled()} 체크를 병행한다.
-
-\subsection*{Assumption}
-\texttt{include/oqs/kem.h}의 \texttt{OQS\_KEM\_algs\_length}와 \texttt{src/kem/kem.c}의 식별자 배열 길이가
-동일 전제를 가져야 안전하다. 코드 스냅샷상 두 값의 불일치 가능성이 보여 운영 전 점검이 필요하다.
+실사용 시 \texttt{OQS\_KEM\_alg\_is\_enabled()} 또는 \texttt{OQS\_SIG\_alg\_is\_enabled()} 체크를 병행한다.

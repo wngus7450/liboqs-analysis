@@ -10,25 +10,33 @@
 \end{itemize}
 
 \subsection{권장 빌드 절차}
-프로젝트 루트에서 다음 흐름을 권장한다.
+프로젝트 루트에서 필요한 테스트 대상을 빌드한다.
+예를 들어 KEM 테스트 바이너리는 다음 명령으로 생성한다.
 
-\begin{lstlisting}[style=cstyle,caption={Configure + Build 예시 (CMake)}]
-cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
-cmake --build build -j
+\begin{lstlisting}[style=cstyle,caption={테스트 바이너리 빌드 예시}]
+make kat_kem
+\end{lstlisting}
+
+SIG 테스트 바이너리가 필요하면 \texttt{make kat\_sig}를 실행한다.
+
+\subsection{알고리즘 오브젝트 빌드 예시}
+각 알고리즘 구현 파일은 다음과 같이 컴파일러를 직접 호출해 오브젝트 파일로 빌드할 수 있다.
+
+\begin{lstlisting}[style=cstyle,caption={SLH-DSA 구현 파일 컴파일 예시}]
+/usr/bin/cc -I./include \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
+    -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_128f.o \
+    -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_128f.c
 \end{lstlisting}
 
 \subsection{산출물 확인}
 \begin{lstlisting}[style=cstyle,caption={주요 정적 라이브러리 산출물}]
-build/lib/liboqs-algorithms.a
+build/lib/liboqs.a
 build/lib/liboqs-internal.a
 \end{lstlisting}
 
 \subsection{테스트 실행 예시}
 \begin{lstlisting}[style=cstyle,caption={KAT 기반 KEM 테스트 예시}]
-# Binary path may differ by build configuration
-./build/tests/kat_kem ML-KEM-768
+./build/tests/kat_kem ml-kem-768 > /tmp/kat_mlkem768.out
+echo $?
 \end{lstlisting}
-
-\subsection*{Assumption}
-저장소 루트에 \texttt{CMakeLists.txt}가 존재한다고 가정하고 표준 CMake 명령을 제시했다.
-실제 빌드 시스템 차이가 있으면 동일 원칙(구성-빌드-테스트)으로 명령을 치환한다.
