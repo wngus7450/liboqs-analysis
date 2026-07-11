@@ -19,6 +19,7 @@ OQS_API const char *OQS_SIG_alg_identifier(size_t i) {
 		OQS_SIG_alg_ml_dsa_44,
 		OQS_SIG_alg_ml_dsa_65,
 		OQS_SIG_alg_ml_dsa_87,
+		OQS_SIG_alg_haetae,
 		///// OQS_COPY_FROM_SLH_DSA_FRAGMENT_ALGID_START
 		OQS_SIG_alg_slh_dsa_pure_sha2_128s,
 		OQS_SIG_alg_slh_dsa_pure_sha2_128f,
@@ -217,6 +218,13 @@ OQS_API int OQS_SIG_alg_is_enabled(const char *method_name) {
 #endif
 
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ENABLED_CASE_END
+	} else if (0 == strcasecmp(method_name, OQS_SIG_alg_haetae)) {
+#ifdef OQS_ENABLE_SIG_haetae
+		return 1;
+#else
+		return 0;
+#endif
+
 ///// OQS_COPY_FROM_SLH_DSA_FRAGMENT_ENABLED_START
 	} else if (0 == strcasecmp(method_name, OQS_SIG_alg_slh_dsa_pure_sha2_128s)) {
 #ifdef OQS_ENABLE_SIG_slh_dsa_pure_sha2_128s
@@ -1188,6 +1196,13 @@ OQS_API OQS_SIG *OQS_SIG_new(const char *method_name) {
 #endif
 
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_NEW_CASE_END
+	} else if (0 == strcasecmp(method_name, OQS_SIG_alg_haetae)) {
+#ifdef OQS_ENABLE_SIG_haetae
+		return OQS_SIG_haetae_new();
+#else
+		return NULL;
+#endif
+
 ///// OQS_COPY_FROM_SLH_DSA_FRAGMENT_SIGNEW_START
 	} else if (0 == strcasecmp(method_name, OQS_SIG_alg_slh_dsa_pure_sha2_128s)) {
 #ifdef OQS_ENABLE_SIG_slh_dsa_pure_sha2_128s

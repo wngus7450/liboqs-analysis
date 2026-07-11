@@ -178,6 +178,9 @@
 #define OQS_ENABLE_SIG_ml_dsa_87_x86_64 1
 /* #undef OQS_ENABLE_SIG_ml_dsa_87_aarch64 */
 
+#define OQS_ENABLE_SIG_HAETAE 1
+#define OQS_ENABLE_SIG_haetae 1
+
 #define OQS_ENABLE_SIG_FALCON 1
 #define OQS_ENABLE_SIG_falcon_512 1
 #define OQS_ENABLE_SIG_falcon_512_avx2 1

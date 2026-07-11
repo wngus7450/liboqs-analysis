@@ -21,6 +21,10 @@ KAT_COMMON_OBJS := $(BUILD_DIR)/test_helpers.o
 OQS_SRC_C := $(shell find src -type f -name '*.c')
 OQS_SRC_C := $(filter-out src/sig_stfl/%,$(OQS_SRC_C))
 OQS_SRC_C := $(filter-out src/minimal/sig_minimal.c,$(OQS_SRC_C))
+OQS_SRC_C := $(filter-out src/sig/haetae/haetae_ref/benchmark/%,$(OQS_SRC_C))
+OQS_SRC_C := $(filter-out src/sig/haetae/haetae_ref/kat/%,$(OQS_SRC_C))
+OQS_SRC_C := $(filter-out src/sig/haetae/haetae_ref/test/%,$(OQS_SRC_C))
+OQS_SRC_C := $(filter-out src/sig/haetae/haetae_ref/src/randombytes.c,$(OQS_SRC_C))
 OQS_SRC_C := $(filter-out src/common/sha3/xkcp_low/KeccakP-1600times4/avx2/%,$(OQS_SRC_C))
 OQS_SRC_C := $(filter-out src/common/sha3/xkcp_low/KeccakP-1600/avx2/%,$(OQS_SRC_C))
 OQS_OBJ := $(patsubst src/%.c,$(OBJ_DIR)/%.o,$(OQS_SRC_C))
@@ -62,6 +66,12 @@ $(OBJ_DIR)/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/ml-dsa/src/%.o: EXTRA_CPPFLAGS 
 $(OBJ_DIR)/sig/ml_dsa/mldsa-native_ml-dsa-44_ref/mldsa/src/%.o: EXTRA_CPPFLAGS += -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" -DMLD_CONFIG_PARAMETER_SET=44
 $(OBJ_DIR)/sig/ml_dsa/mldsa-native_ml-dsa-65_ref/mldsa/src/%.o: EXTRA_CPPFLAGS += -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" -DMLD_CONFIG_PARAMETER_SET=65
 $(OBJ_DIR)/sig/ml_dsa/mldsa-native_ml-dsa-87_ref/mldsa/src/%.o: EXTRA_CPPFLAGS += -DMLD_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" -DMLD_CONFIG_PARAMETER_SET=87
+
+# HAETAE reference implementation, mode 2 exposed as "HAETAE".
+$(OBJ_DIR)/sig/haetae/haetae_ref/src/%.o: CPPFLAGS := -I./include -I./src/sig/haetae/haetae_ref/include -I./include/oqs -I./src -I$(OQS_BUILD_DIR)/include
+$(OBJ_DIR)/sig/haetae/haetae_ref/src/%.o: EXTRA_CPPFLAGS += -DHAETAE_MODE=2
+$(OBJ_DIR)/sig/haetae/sig_haetae.o: CPPFLAGS := -I./include -I./src/sig/haetae/haetae_ref/include -I./include/oqs -I./src -I$(OQS_BUILD_DIR)/include
+$(OBJ_DIR)/sig/haetae/sig_haetae.o: EXTRA_CPPFLAGS += -DHAETAE_MODE=2
 
 # Per-directory config for mlkem-native reference implementations.
 $(OBJ_DIR)/kem/ml_kem/mlkem-native_ml-kem-512_ref/mlkem/src/%.o: EXTRA_CPPFLAGS += -DMLK_CONFIG_FILE=\"../../integration/liboqs/config_c.h\" -DMLK_CONFIG_PARAMETER_SET=512

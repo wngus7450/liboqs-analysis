@@ -1910,7 +1910,140 @@
     -MMD -MP -o build/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_256s.o \
     -c ./src/sig/slh_dsa/wrappers/pure/slh_dsa_pure_shake_256s.c
 ----------------------------------------------------------------------------------------
-(1) sig 통합(ml_dsa+slh_dsa) 코드
+(0) HAETAE build directory 생성
+/usr/bin/mkdir -p build/sig/haetae/haetae_ref/src build/sig/haetae
+----------------------------------------------------------------------------------------
+※ HAETAE src/randombytes.c는 별도로 컴파일하지 않는다. include/randombytes.h에서 OQS_randombytes를 호출하도록 연결한다.
+----------------------------------------------------------------------------------------
+(1) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/decompose.o \
+    -c ./src/sig/haetae/haetae_ref/src/decompose.c
+----------------------------------------------------------------------------------------
+(2) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/encoding.o \
+    -c ./src/sig/haetae/haetae_ref/src/encoding.c
+----------------------------------------------------------------------------------------
+(3) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/fft.o \
+    -c ./src/sig/haetae/haetae_ref/src/fft.c
+----------------------------------------------------------------------------------------
+(4) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/fips202.o \
+    -c ./src/sig/haetae/haetae_ref/src/fips202.c
+----------------------------------------------------------------------------------------
+(5) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/fixpoint.o \
+    -c ./src/sig/haetae/haetae_ref/src/fixpoint.c
+----------------------------------------------------------------------------------------
+(6) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/ntt.o \
+    -c ./src/sig/haetae/haetae_ref/src/ntt.c
+----------------------------------------------------------------------------------------
+(7) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/packing.o \
+    -c ./src/sig/haetae/haetae_ref/src/packing.c
+----------------------------------------------------------------------------------------
+(8) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/poly.o \
+    -c ./src/sig/haetae/haetae_ref/src/poly.c
+----------------------------------------------------------------------------------------
+(9) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/polyfix.o \
+    -c ./src/sig/haetae/haetae_ref/src/polyfix.c
+----------------------------------------------------------------------------------------
+(10) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/polymat.o \
+    -c ./src/sig/haetae/haetae_ref/src/polymat.c
+----------------------------------------------------------------------------------------
+(11) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/polyvec.o \
+    -c ./src/sig/haetae/haetae_ref/src/polyvec.c
+----------------------------------------------------------------------------------------
+(12) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/reduce.o \
+    -c ./src/sig/haetae/haetae_ref/src/reduce.c
+----------------------------------------------------------------------------------------
+(13) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/sampler.o \
+    -c ./src/sig/haetae/haetae_ref/src/sampler.c
+----------------------------------------------------------------------------------------
+(14) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/sign.o \
+    -c ./src/sig/haetae/haetae_ref/src/sign.c
+----------------------------------------------------------------------------------------
+(15) HAETAE reference implementation 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/haetae_ref/src/symmetric-shake.o \
+    -c ./src/sig/haetae/haetae_ref/src/symmetric-shake.c
+----------------------------------------------------------------------------------------
+(1) HAETAE 통합 코드
+/usr/bin/cc -I./include \
+    -I./src/sig/haetae/haetae_ref/include \
+    -I./include/oqs \
+    -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DHAETAE_MODE=2 \
+    -MMD -MP -o build/sig/haetae/sig_haetae.o \
+    -c ./src/sig/haetae/sig_haetae.c
+----------------------------------------------------------------------------------------
+(1) sig 통합(ml_dsa+slh_dsa+haetae) 코드
 /usr/bin/cc -I./include \
     -std=gnu11 -fPIC -fvisibility=hidden -Wa,--noexecstack -O3 -fomit-frame-pointer -fdata-sections -ffunction-sections -Wl,--gc-sections -DMLD_CONFIG_PARAMETER_SET=44 -DMLD_CONFIG_FILE="../../integration/liboqs/config_c.h" \
     -MMD -MP -o build/sig/sig.o \
@@ -1939,3 +2072,6 @@ cc -I/home/wngus/projects/liboqs-analysis/include -std=gnu11 -O2 \
     /home/wngus/projects/liboqs-analysis/build/lib/liboqs-internal.a \
     -Wl,--end-group \
     -lm -o /tmp/kat_sig
+----------------------------------------------------------------------------------------
+(1) HAETAE 서명 KAT 실행
+/tmp/kat_sig HAETAE

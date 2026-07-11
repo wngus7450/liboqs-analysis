@@ -39,6 +39,8 @@ extern "C" {
 /** Algorithm identifier for ML-DSA-87 */
 #define OQS_SIG_alg_ml_dsa_87 "ML-DSA-87"
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALG_IDENTIFIER_END
+/** Algorithm identifier for HAETAE */
+#define OQS_SIG_alg_haetae "HAETAE"
 ///// OQS_COPY_FROM_SLH_DSA_FRAGMENT_ALGID_START
 /** Algorithm identifier for slh_dsa_pure_sha2_128s */
 #define OQS_SIG_alg_slh_dsa_pure_sha2_128s "SLH_DSA_PURE_SHA2_128S"
@@ -362,7 +364,7 @@ extern "C" {
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALGS_LENGTH_START
 
 /** Number of algorithm identifiers above. */
-#define OQS_SIG_algs_length 3 + OQS_SIG_SLH_DSA_algs_length
+#define OQS_SIG_algs_length 4 + OQS_SIG_SLH_DSA_algs_length
 ///// OQS_COPY_FROM_UPSTREAM_FRAGMENT_ALGS_LENGTH_END
 
 /**
@@ -620,6 +622,9 @@ OQS_API bool OQS_SIG_supports_ctx_str(const char *alg_name);
 #endif /* OQS_ENABLE_SIG_SLH_DSA */
 ///// OQS_COPY_FROM_SLH_DSA_FRAGMENT_INCLUDE_END
 // EDIT-WHEN-ADDING-SIG
+#ifdef OQS_ENABLE_SIG_HAETAE
+#include <oqs/sig_haetae.h>
+#endif /* OQS_ENABLE_SIG_HAETAE */
 
 #if defined(__cplusplus)
 } // extern "C"
